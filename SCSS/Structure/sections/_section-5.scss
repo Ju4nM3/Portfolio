@@ -1,0 +1,8 @@
+.hero__services {
+	@include section-default;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+	font-weight: 700;
+}

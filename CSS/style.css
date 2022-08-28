@@ -1,0 +1,369 @@
+* {
+  font-family: "Anonymous Pro", monospace;
+}
+* li, * a, * button, * h1, * h2, * h3, * h4, * h5, * h6 {
+  all: unset;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(165, 165, 165);
+}
+body .home__menu-btn {
+  position: fixed;
+  top: 0;
+  left: calc(50% - 20px);
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40px;
+  height: 15px;
+  opacity: 0.6;
+  z-index: 1000;
+}
+body .home__menu-btn .menu-btn-circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+}
+body main section {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+body main .sectionDivider {
+  display: none;
+}
+body main .hero__home {
+  background-image: url(../../../IMAGES/contactBackground.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main .hero__home .home__presentation-container {
+  position: relative;
+  top: 200px;
+  display: grid;
+  grid-template-areas: "logo divider name" "presentation presentation presentation";
+  justify-content: center;
+  align-items: center;
+}
+body main .hero__home .home__presentation-container .home__logo {
+  grid-area: logo;
+}
+body main .hero__home .home__presentation-container .home__logo p {
+  text-align: center;
+  font-size: 1.4rem;
+  letter-spacing: 0.2rem;
+  color: rgb(165, 165, 165);
+}
+body main .hero__home .home__presentation-container .home__logo p span {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+body main .hero__home .home__presentation-container .home__divider {
+  grid-area: divider;
+  justify-self: center;
+  width: 2px;
+  height: 100%;
+  background-color: rgb(165, 165, 165);
+}
+body main .hero__home .home__presentation-container .home__name {
+  justify-self: center;
+  grid-area: name;
+  font-size: 1.4rem;
+  color: rgb(165, 165, 165);
+}
+body main .hero__home .home__presentation-container .home__presentation {
+  grid-area: presentation;
+  font-size: 1.5rem;
+  color: rgb(165, 165, 165);
+  margin-top: 15px;
+}
+body main .hero__home .home__portfolio-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 350px;
+  width: 120px;
+  height: 35px;
+  border-radius: 3%;
+  background-color: rgb(165, 165, 165);
+  letter-spacing: 2px;
+}
+body main .hero__about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main .hero__about .hero__about-title {
+  position: relative;
+  top: 11%;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+body main .hero__about .hero__about-imgContainer {
+  position: relative;
+  top: 20%;
+  width: 200px;
+  height: 180px;
+}
+body main .hero__about .hero__about-imgContainer .about__image-background {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+body main .hero__about .hero__about-imgContainer img {
+  position: relative;
+  width: 320px;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+  z-index: 200;
+  border-radius: 1%;
+}
+body main .hero__about p {
+  width: 300px;
+  position: relative;
+  top: 24%;
+}
+body main .hero__skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main .hero__skills .hero__skills-title {
+  position: relative;
+  top: 11%;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+body main .hero__skills .hero__learned-skills {
+  position: relative;
+  top: 20%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 15px;
+}
+body main .hero__skills .hero__learned-skills .hero__skills-html {
+  width: 100px;
+  height: min-content;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 3px;
+}
+body main .hero__skills .hero__learned-skills .hero__skills-html span {
+  font-size: 1.1rem;
+  font-weight: 700;
+  font-style: italic;
+}
+body main .hero__skills .hero__learned-skills .hero__skills-html a {
+  width: 100%;
+  height: 100%;
+}
+body main .hero__skills .hero__learned-skills .hero__skills-html a svg {
+  margin-top: 3px;
+  width: 65%;
+  height: 100%;
+}
+body main .hero__skills .hero__learned-skills .hero__skills-css {
+  width: 100px;
+  height: min-content;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 3px;
+}
+body main .hero__skills .hero__learned-skills .hero__skills-css span {
+  font-size: 1.1rem;
+  font-weight: 700;
+  font-style: italic;
+}
+body main .hero__skills .hero__learned-skills .hero__skills-css a {
+  width: 100%;
+  height: 100%;
+}
+body main .hero__skills .hero__learned-skills .hero__skills-css a svg {
+  margin-top: 3px;
+  width: 65%;
+  height: 100%;
+}
+body main .hero__skills .hero__learned-skills .hero__skills-js {
+  width: 100px;
+  height: min-content;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 3px;
+}
+body main .hero__skills .hero__learned-skills .hero__skills-js span {
+  font-size: 1.1rem;
+  font-weight: 700;
+  font-style: italic;
+}
+body main .hero__skills .hero__learned-skills .hero__skills-js a {
+  width: 100%;
+  height: 100%;
+}
+body main .hero__skills .hero__learned-skills .hero__skills-js a svg {
+  margin-top: 3px;
+  width: 65%;
+  height: 100%;
+}
+body main .hero__skills .hero__skillsToLearn {
+  position: relative;
+  top: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+  font-weight: 700;
+}
+body main .hero__skills .hero__skillsToLearn .hero__skills-react {
+  width: 100px;
+  height: min-content;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 3px;
+}
+body main .hero__skills .hero__skillsToLearn .hero__skills-react span {
+  font-size: 1.1rem;
+  font-weight: 700;
+  font-style: italic;
+}
+body main .hero__skills .hero__skillsToLearn .hero__skills-react a {
+  width: 100%;
+  height: 100%;
+}
+body main .hero__skills .hero__skillsToLearn .hero__skills-react a svg {
+  margin-top: 3px;
+  width: 65%;
+  height: 100%;
+}
+body main .hero__projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main .hero__projects .hero__projects-title {
+  position: relative;
+  top: 11%;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+body main .hero__projects .hero__projects-firstProjectContainer, body main .hero__projects .hero__projects-secondProjectContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 10px;
+  top: 20%;
+}
+body main .hero__projects .hero__projects-firstProjectContainer a, body main .hero__projects .hero__projects-secondProjectContainer a {
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+body main .hero__projects .hero__projects-firstProjectContainer img, body main .hero__projects .hero__projects-secondProjectContainer img {
+  width: 240px;
+}
+body main .hero__projects .hero__projects-secondProjectContainer {
+  top: 28%;
+}
+body main .hero__services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 700;
+}
+body main .hero__contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main .hero__contact .hero__contact-title {
+  position: relative;
+  top: 11%;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+body main .hero__contact .hero__contact-iconContainer {
+  position: relative;
+  top: 20%;
+  display: flex;
+  width: 68vw;
+  justify-content: space-evenly;
+  align-items: center;
+}
+body main .hero__contact .hero__contact-iconContainer svg {
+  width: 35px;
+  height: 35px;
+}
+body main .hero__contact form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  top: 25%;
+  width: min-content;
+  outline: 1px solid black;
+}
+body main .hero__contact form input, body main .hero__contact form textarea {
+  outline: none;
+  padding: 4px;
+  margin: 0 14px;
+  width: 68vw;
+  height: 30px;
+}
+body main .hero__contact form input:first-child, body main .hero__contact form textarea:first-child {
+  margin-top: 14px;
+}
+body main .hero__contact form textarea {
+  height: initial;
+  margin-bottom: 14px;
+}
+body main .goDown {
+  position: absolute;
+  bottom: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body main .goDown .goDownLeft {
+  height: 3px;
+  width: 25px;
+  border-radius: 5%;
+  transform: translateX(2.1px) rotate(30deg);
+  background-color: black;
+}
+body main .goDown .goDownRight {
+  height: 3px;
+  width: 25px;
+  border-radius: 5%;
+  background-color: black;
+  transform: translateX(-2.1px) rotate(-30deg);
+}
+body navbar {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */

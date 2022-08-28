@@ -1,0 +1,67 @@
+.hero__home{
+  background-image: url(../../../IMAGES/contactBackground.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include section-default;
+  .home__presentation-container{
+    position: relative;
+    top: 200px; 
+
+    display: grid;
+    grid-template-areas: 
+    "logo divider name"
+    "presentation presentation presentation";
+
+    justify-content: center;
+    align-items: center;
+
+    .home__logo{
+      grid-area: logo;
+      p{
+        text-align: center;
+        font-size: 1.4rem;
+        letter-spacing: 0.2rem;
+        color: $body-background-color;
+        span{
+          font-weight: 700;
+          font-size: 1.8rem;
+        }
+      }
+      
+    }
+    .home__divider{
+      grid-area: divider;
+      justify-self: center;
+      width: 2px;
+      height: 100%;
+      background-color: $body-background-color;
+    }
+    .home__name{
+      justify-self: center;
+      grid-area: name;
+      font-size: 1.4rem;
+      color: $body-background-color;
+    }
+    .home__presentation{
+      grid-area: presentation;
+      font-size: 1.5rem;
+      color: $body-background-color;
+      margin-top: 15px;
+    }
+  }
+  .home__portfolio-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 350px;
+    width: 120px;
+    height: 35px;
+    border-radius: 3%;
+    background-color: $body-background-color;
+    letter-spacing: 2px;
+  }
+}
+

@@ -1,0 +1,26 @@
+.hero__projects{
+  @include section-default;
+  .hero__projects-title {
+		@include section-title;
+	}
+  .hero__projects-firstProjectContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 10px;
+    top: 20%;
+    a{
+    font-size: 0.7rem;
+    font-weight: 700;
+  }
+    img{
+      width: 240px;
+    }
+  }
+  .hero__projects-secondProjectContainer{
+    @extend .hero__projects-firstProjectContainer;
+    top: 28%;
+  }
+}

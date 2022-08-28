@@ -1,0 +1,25 @@
+@import "Utilities/colors";
+@import "Utilities/fonts";
+@import "Utilities/mixins";
+
+* {
+	li,	a, button, h1, h2, h3, h4, h5, h6 {
+		all: unset;
+	}
+	font-family: $programming-font;
+}
+
+body {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: $body-background-color;
+	@import "Structure/navbar-menu";
+	@import "Structure/main";
+	@import "Structure/navbar";
+	@import "Breakpoints/360";
+	@import "Breakpoints/375";
+	@import "Breakpoints/411";
+	@import "Breakpoints/768";
+	@import "Breakpoints/1366";
+	@import "Breakpoints/1920";
+}
